@@ -1,0 +1,68 @@
+---
+title       : FM DX Interactive Log Analysis
+subtitle    : 2016
+author      : AndyP
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## Purpose
+
+* The purpose of this application is to provide an online interactive statistical analysis tool using data from my own FM DX loggings from the years 2014 and 2015. 
+
+## FM DX
+
+* FM DX is the hobby of receiving FM radio stations well beyond their intended geographical target area by harnessing different types of radio propagation events
+
+## Dataset
+
+```{r}
+data2014 <- 990
+data2015 <- 1632
+totalLogs <- data2014 + data2015
+```
+
+There are `r totalLogs` log entries in the included dataset
+
+
+--- .class #id 
+
+## So what?
+
+The idea behind this tool is to make available an application to allow people on the Internet to: 
+* Mine the data to look at probabilities (and trends) in propagation enhancement events.
+* See how the distances vary depending on the propagation mode being used
+* Look at the peaks and troughs especially in regards to Sporadic E and compare 'offline' to other data sets such as sun spot numbers
+
+--- .class #id 
+
+## Functionality
+
+In this minimal viable product (MVP) version of the tool, the following functionality is available:
+
+1. Data for 2014 and 2015
+2. Propagation Modes (see Application helpfile):
+  * Aurora
+  * Meteor Scatter
+  * Sporadic E
+  * Tropospheric
+3. Bar plot of total logs based on Month or Day (as appropriate)
+4. Calculation of minimum, maximum and average distance (in miles) between the radio receiver and transmitter
+
+https://andyp-bsc.shinyapps.io/FMDXLogAnalysis/
+
+--- .class #id 
+
+## Future
+
+Future enhancements to the application could include:
+* Make available all 10 years worth of data
+* Apply machine learning to the data to predict the probability of Sporadic E on a given day
+* Overlay Sun spot numbers and solar flare events in relation to occurrences of Sporadic E
+* Overlay pressure (and humidity?) in relation to tropospheric propagation
+* Overlay annual meteor showers against meteor scatter propagation (I would expect a high correlation for this)

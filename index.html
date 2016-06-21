@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FM DX Interactive Log Analysis</title>
+  <meta charset="utf-8">
+  <meta name="description" content="FM DX Interactive Log Analysis">
+  <meta name="author" content="AndyP">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>FM DX Interactive Log Analysis</h1>
+    <h2>2016</h2>
+    <p>AndyP<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Purpose</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>The purpose of this application is to provide an online interactive statistical analysis tool using data from my own FM DX loggings from the years 2014 and 2015. </li>
+</ul>
+
+<h2>FM DX</h2>
+
+<ul>
+<li>FM DX is the hobby of receiving FM radio stations well beyond their intended geographical target area by harnessing different types of radio propagation events</li>
+</ul>
+
+<h2>Dataset</h2>
+
+<pre><code class="r">data2014 &lt;- 990
+data2015 &lt;- 1632
+totalLogs &lt;- data2014 + data2015
+</code></pre>
+
+<p>There are 2622 log entries in the included dataset</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>So what?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The idea behind this tool is to make available an application to allow people on the Internet to: </p>
+
+<ul>
+<li>Mine the data to look at probabilities (and trends) in propagation enhancement events.</li>
+<li>See how the distances vary depending on the propagation mode being used</li>
+<li>Look at the peaks and troughs especially in regards to Sporadic E and compare &#39;offline&#39; to other data sets such as sun spot numbers</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Functionality</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>In this minimal viable product (MVP) version of the tool, the following functionality is available:</p>
+
+<ol>
+<li>Data for 2014 and 2015</li>
+<li>Propagation Modes (see Application helpfile):
+
+<ul>
+<li>Aurora</li>
+<li>Meteor Scatter</li>
+<li>Sporadic E</li>
+<li>Tropospheric</li>
+</ul></li>
+<li>Bar plot of total logs based on Month or Day (as appropriate)</li>
+<li>Calculation of minimum, maximum and average distance (in miles) between the radio receiver and transmitter</li>
+</ol>
+
+<p><a href="https://andyp-bsc.shinyapps.io/FMDXLogAnalysis/">https://andyp-bsc.shinyapps.io/FMDXLogAnalysis/</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Future</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Future enhancements to the application could include:</p>
+
+<ul>
+<li>Make available all 10 years worth of data</li>
+<li>Apply machine learning to the data to predict the probability of Sporadic E on a given day</li>
+<li>Overlay Sun spot numbers and solar flare events in relation to occurrences of Sporadic E</li>
+<li>Overlay pressure (and humidity?) in relation to tropospheric propagation</li>
+<li>Overlay annual meteor showers against meteor scatter propagation (I would expect a high correlation for this)</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Purpose'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='So what?'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Functionality'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Future'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
